@@ -1,0 +1,57 @@
+html {
+	background: red;
+	font-size: 15px;
+}
+
+#world {
+	width: 300px;
+	text-align: center;
+	border-color: white !important;
+}
+
+#app {
+	text-align: inherit;
+	width: 100%;
+}
+
+div.row {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 20%;
+}
+
+input {
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	background-color: lightcoral;
+}
+
+input.action {
+	color: black;
+	background-color: white;
+}
+
+input:focus {
+	border-color: white !important;
+}
+
+#result {
+	width: 82%; 
+	min-height: 5%;
+	text-align: right;
+	font-size: 1.5em;
+}
+
+.row input.span1 {
+	width: 20%;
+}
+
+.row input.span2 {
+	width: 40%;
+	margin-right: 4px;
+}
+
+

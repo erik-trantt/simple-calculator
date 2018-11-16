@@ -1,0 +1,47 @@
+html {
+	background: red;
+	font-size: 15px;
+}
+
+#calculator {
+	width: 400px;
+	justify-content: center;
+	justify-items: center;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 10px;
+
+	justify-items: stretch;
+}
+
+#resultArea {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(2, 1fr);	
+	grid-column: 1 / span 4;
+}
+.result, .input {
+	color: black;
+	background-color: white;
+	height: 30px;
+	text-align: right;
+	padding: 5px 10px;
+}
+
+.result {
+	font-size: 1.5em;
+}
+
+.span2 {
+	grid-column: 1 / span 2;
+}
+
+.operator:focus {
+	filter: invert(100%);
+}
+
+.action.equal:keydown {
+	filter: greyscale(100%);
+}
