@@ -2,10 +2,10 @@
 var result = 0;
 var input, inputString;
 var state = "cleared";
-var re = /\d+\.?\d*/;
+var re = /([\+\-]?\d+\.?\d*[\+\-\*\/]?)/g;
 var re_operator = /([\+\-\*\/])?/g;
 var OperatorsEnum = Object.freeze({"plus":"+", "minus":"-", "multiply":"*", "divide":"/"});
-var inputArea;
+var inputArea, resultArea;
 
 window.onload = function() {
     // call to get an array of buttons by className=number
